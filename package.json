@@ -1,10 +1,30 @@
 {
-  "scripts": {
-    "start": "snowpack dev",
-    "build": "snowpack build",
-    "test": "echo \"This template does not include a test runner by default.\" && exit 1"
-  },
-  "devDependencies": {
-    "snowpack": "^3.0.1"
-  }
+	"scripts": {
+		"start": "snowpack dev",
+		"build": "snowpack build",
+		"serve": "serve ./build/",
+		"compress": "gltf-pipeline -i ./static/models/zarulem/zarulem.gltf -o ./static/models/zarulem/zarulem.draco.glb -b -d --draco.quantizeTexcoordBits 0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.13.8",
+		"@babel/eslint-parser": "^7.13.8",
+		"@babel/eslint-plugin": "^7.13.0",
+		"@babel/plugin-proposal-class-properties": "^7.13.0",
+		"cannon-es-debugger": "^0.1.2",
+		"dat.gui": "^0.7.7",
+		"eslint": "^7.18.0",
+		"gltf-pipeline": "^3.0.2",
+		"howler": "^2.2.1",
+		"lodash.throttle": "^4.1.1",
+		"prettier": "^2.2.1",
+		"serve": "^11.3.2",
+		"snowpack": "^3.0.1",
+		"snowpack-plugin-glslify": "^1.0.0",
+		"stats.js": "^0.17.0"
+	},
+	"dependencies": {
+		"cannon-es": "^0.16.0",
+		"gsap": "^3.6.0",
+		"three": "^0.125.1"
+	}
 }

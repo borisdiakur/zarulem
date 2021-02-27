@@ -1,0 +1,17 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true
+	},
+	"parser": "@babel/eslint-parser",
+	"parserOptions": {
+		"ecmaVersion": 2019,
+		"sourceType": "module"
+	},
+	"plugins": ["@babel"],
+	"extends": ["eslint:recommended"],
+	"rules": {
+		"semi": [2, "never"]
+	}
+}
