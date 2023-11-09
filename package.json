@@ -14,7 +14,7 @@
 		"dat.gui": "^0.7.7",
 		"eslint": "^7.18.0",
 		"gltf-pipeline": "^3.0.2",
-		"howler": "^2.2.1",
+		"howler": "^2.2.4",
 		"lodash.throttle": "^4.1.1",
 		"prettier": "^2.2.1",
 		"serve": "^11.3.2",
